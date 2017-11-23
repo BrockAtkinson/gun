@@ -1,73 +1,27 @@
 {
-  "name": "gun",
+  "name": "pistol",
   "version": "0.9.1",
-  "description": "Graph engine",
+  "description": "standalone gun.js security, encryption and authentication",
   "main": "index.js",
-  "browser": "gun.min.js",
-  "scripts": {
-    "start": "node examples/http.js 8080",
-    "prepublish": "npm run unbuild",
-    "test": "mocha",
-    "testsea": "mocha test/sea.js",
-    "e2e": "mocha e2e/distributed.js",
-    "docker": "hooks/build",
-    "unbuild": "node lib/unbuild.js && uglifyjs gun.js -o gun.min.js -c -m"
-  },
+  "browser": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amark/gun.git"
+    "url": "git+https://github.com/brockatkinson/pistol.git"
   },
-  "keywords": [
-    "gun",
-    "gunDB",
-    "graph",
-    "document",
-    "key",
-    "value",
-    "relational",
-    "datastore",
-    "database",
-    "engine",
-    "realtime",
-    "decentralized",
-    "peer-to-peer",
-    "distributed",
-    "P2P",
-    "OSS",
-    "embedded",
-    "localstorage",
-    "S3"
-  ],
   "author": "Mark Nadal",
   "license": "(Zlib OR MIT OR Apache-2.0)",
   "bugs": {
     "url": "https://github.com/amark/gun/issues"
   },
   "homepage": "https://github.com/amark/gun#readme",
-  "engines": {
-    "node": ">=0.8.4"
-  },
-  "dependencies": {
-    "aws-sdk": ">=2.153.0",
-    "ws": "~>2.2.3"
-  },
   "devDependencies": {
     "spark-md5": "^3.0.0",
     "@std/esm": "^0.8.3",
     "@trust/webcrypto": "^0.7.1",
     "buffer": "^5.0.7",
-    "express": ">=4.15.2",
     "fake-indexeddb": "^2.0.3",
-    "hapi": "^16.1.1",
-    "inert": "^4.2.0",
-    "ip": "^1.1.5",
-    "mocha": ">=3.2.0",
     "node-localstorage": "^1.3.0",
     "node-webcrypto-ossl": "^1.0.31",
-    "panic-manager": "^1.2.0",
-    "panic-server": "^1.1.0",
-    "text-encoding": "^0.6.4",
-    "uglify-js": ">=2.8.22",
-    "uws": "~>0.14.1"
+    "text-encoding": "^0.6.4"
   }
 }
