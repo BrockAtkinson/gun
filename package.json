@@ -1,9 +1,9 @@
 {
   "name": "pistol",
-  "version": "0.10.1",
+  "version": "0.10.6",
   "description": "standalone gun.js security, encryption and authentication plugin",
-  "main": "index.js",
-  "browser": "index.js",
+  "main": "sea.js",
+  "browser": "sea.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brockatkinson/pistol.git"
